@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>eToro Sign In</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #e4e7f1;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: white;
+    }
+
+    .logo {
+      height: 30px;
+    }
+
+    .language {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+    }
+
+    .language img {
+      height: 20px;
+    }
+
+    .login-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+    }
+
+    .login-box {
+      background-color: white;
+      padding: 40px;
+      border-radius: 10px;
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .login-box h2 {
+      margin-bottom: 20px;
+      font-weight: normal;
+      font-size: 22px;
+    }
+
+    .login-box input[type="text"],
+    .login-box input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-bottom: 1px solid #ccc;
+      outline: none;
+      font-size: 16px;
+    }
+
+    .forgot {
+      display: block;
+      text-align: left;
+      color: green;
+      margin-bottom: 15px;
+      font-size: 14px;
+    }
+
+    .checkbox {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .checkbox input {
+      margin-right: 10px;
+    }
+
+    .signin-btn {
+      width: 100%;
+      background-color: #00c100;
+      color: white;
+      padding: 12px;
+      font-size: 16px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+
+    .divider {
+      text-align: center;
+      margin: 20px 0;
+      position: relative;
+    }
+
+    .divider::before,
+    .divider::after {
+      content: '';
+      height: 1px;
+      background: #ccc;
+      position: absolute;
+      top: 50%;
+      width: 40%;
+    }
+
+    .divider::before {
+      left: 0;
+    }
+
+    .divider::after {
+      right: 0;
+    }
+
+    .divider span {
+      background-color: white;
+      padding: 0 10px;
+      font-size: 14px;
+      color: #999;
+    }
+
+    .social-btn {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 25px;
+      border: 1px solid #ccc;
+      font-size: 15px;
+      cursor: pointer;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .social-btn img {
+      height: 20px;
+      width: 20px;
+    }
+
+    .signup-text {
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .signup-text a {
+      color: green;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://www.etoro.com/favicon.ico" alt="eToro Logo" class="logo" />
+    <div class="language">
+      <img src="https://flagcdn.com/gb.svg" alt="UK Flag" />
+      <span>English</span>
+    </div>
+  </header>
+
+  <main class="login-container">
+    <form class="login-box" action="error.html" method="GET">
+      <h2>Sign in</h2>
+      <input type="text" placeholder="Username or Email" name="username" required />
+      <input type="password" placeholder="Password" name="password" required />
+      <a href="#" class="forgot">Forgot password?</a>
+
+      <label class="checkbox">
+        <input type="checkbox" checked />
+        <span>Keep me logged in for 30 days</span>
+      </label>
+
+      <button type="submit" class="signin-btn">Sign in</button>
+
+      <div class="divider"><span>OR</span></div>
+
+      <button type="button" class="social-btn">
+        <img src="icons8-google-48.png" alt="Google" />
+        Sign in with Google
+      </button>
+
+      <button type="button" class="social-btn">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple" />
+        Sign in with Apple
+      </button>
+
+      <button type="button" class="social-btn">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook" />
+        Sign in with Facebook
+      </button>
+
+      <p class="signup-text">Don't have an account? <a href="#">Sign up</a></p>
+    </form>
+  </main>
+</body>
+</html>

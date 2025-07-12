@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Security Alert - eToro</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #e4e7f1;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: white;
+    }
+
+    .logo {
+      height: 30px;
+    }
+
+    .language {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+    }
+
+    .language img {
+      height: 20px;
+    }
+
+    .error-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+      padding: 20px;
+    }
+
+    .error-box {
+      background-color: white;
+      padding: 30px;
+      border-radius: 12px;
+      width: 100%;
+      max-width: 500px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .alert-title {
+      color: #e53935;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .alert-title i {
+      font-size: 24px;
+    }
+
+    .alert-message {
+      font-size: 16px;
+      color: #333;
+      margin-bottom: 25px;
+      line-height: 1.6;
+    }
+
+    .call-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background-color: #ff4747;
+      color: black;
+      font-weight: bold;
+      font-size: 16px;
+      padding: 15px;
+      border-radius: 6px;
+      text-decoration: none;  /* No underline */
+      margin-bottom: 30px;
+    }
+
+    .call-box:hover {
+      text-decoration: none;
+      background-color: #ff2e2e;
+    }
+
+    .call-box i {
+      font-size: 20px;
+    }
+
+    .social-section {
+      text-align: center;
+    }
+
+    .social-btn {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 25px;
+      border: 1px solid #ccc;
+      font-size: 15px;
+      cursor: pointer;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .social-btn img {
+      height: 20px;
+      width: 20px;
+    }
+
+    .signup-text {
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .signup-text a {
+      color: green;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://www.etoro.com/favicon.ico" alt="eToro Logo" class="logo" />
+    <div class="language">
+      <img src="https://flagcdn.com/gb.svg" alt="UK Flag" />
+      <span>English</span>
+    </div>
+  </header>
+
+  <main class="error-container">
+    <div class="error-box">
+      <div class="alert-title">
+        <i>⚠️</i> Security Alert
+      </div>
+      <div class="alert-message">
+        Suspicious activity detected on your device. For your protection and security we've temporarily restricted access.<br><br>
+        This is a precautionary measure to ensure the safety or any financial loss.<br><br>
+        Please get in touch with the support for more information.
+      </div>
+      <a class="call-box" href="tel:+18339219241">
+        <i>📞</i> Call: +1(833)921-9241
+      </a>
+
+      <div class="social-section">
+        <button type="button" class="social-btn">
+          <img src="icons8-google-48.png" alt="Google" />
+          Sign in with Google
+        </button>
+        <button type="button" class="social-btn">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple" />
+          Sign in with Apple
+        </button>
+        <button type="button" class="social-btn">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook" />
+          Sign in with Facebook
+        </button>
+
+        <p class="signup-text">Don't have an account? <a href="#">Sign up</a></p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
